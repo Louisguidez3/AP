@@ -1,0 +1,116 @@
+html, body{
+    font-family: Times, Times New Roman, serif;
+    background-color: rgba(95, 180, 230, 0.753);
+    text-align: center;
+}
+
+
+#logo {
+    position: absolute;
+    height: 40%;
+    width: 20%;
+    top: 0%;
+    right: 0%;
+
+}
+
+.today {
+    background-color: red;
+}
+
+.pread {
+    background-color: #f82af8;
+    cursor: pointer;
+}
+
+table {
+    color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* Style pour le fond du modal */
+.modal {
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    left: 20%;
+    top: 25%;
+    width: 70%;
+    height: 70%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Style pour la boîte de dialogue du modal */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 5%;
+    border: 1px solid #888;
+    height: 80%;
+    width: 75%;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+/* Style pour le bouton de fermeture du modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+
+/* Style pour le bouton de fermeture au survol */
+.close:hover {
+    color: #000;
+}
+
+/* Style pour le texte du modal */
+.modal-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#planning {
+    color: black;
+    border: black;
+    cursor: pointer;
+}
+
+#planning table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+#planning thead {
+    background-color: #eee;
+    text-align: left;
+}
+
+#planning th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+#planning th {
+    font-weight: bold;
+}
+
+#planning tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+

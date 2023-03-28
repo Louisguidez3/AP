@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style_connexion.css">
+<html><head>
+    
+</head>
+<body>
+    <h1>Bienvenue sur la page de connexion</h1>
+    <img id="logo" src="LPF.png">
+<div class="contenu">
+    <br>
+    <form method="post" action= "PHP/validationConnexion.php" >
+        
+        <div class="box">
+            <input class="ID" type="text" name="ID" required="required">
+            <label>Identifiant</label>
+        </div>
+
+        <br>
+
+        <div class="box">
+            <input class="mdp" type="password" name="mdp" required="required">
+            <label>Mot de passe </label>
+        </div>
+        <br>
+        <div class="box">
+            <input type="text" name="captcha"/>
+            <img src="image.php" onclick="this.src='image.php?' + Math.random();" alt="captcha" style="cursor:pointer;">
+        </div>
+        <input class="envoyer" type="submit">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+html{
+    font-family: Times, Times New Roman, serif;
+    background-color: rgba(95, 180, 230, 0.753);
+}
+
+#logo {
+    position: absolute;
+    height: 40%;
+    width: 20%;
+    top: 0%;
+    right: 0%;
+
+}
+
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: transform .2s;
+}
+
+h2{
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+h1:hover {
+    text-shadow: white;
+    transform: scale(1.5);
+    
+}
+
+.contenu {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+/*
+body{
+  height: 100vh;
+}*/
+
+.box {
+    position: relative;
+  }
+
+.box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    transition: .5s;
+  }
+
+input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+  background: transparent;
+  }
+
+.box input:focus ~ label,
+.box input:valid ~ label {
+  top: -25px;
+  left: 0;
+  color:rgba(0, 0, 0, 0.753);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.date{
+  display: none;
+}
+
+.date:focus{
+  display: contents;
+}
+
+.envoyer {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color:rgba(95, 180, 230, 0.753);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: visible;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+  }
+  
+  .envoyer:hover {
+    background: rgba(95, 180, 230, 0.753);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(95, 180, 230, 0.753) , 0 0 25px rgba(95, 180, 230, 0.753)9f4, 0 0 50px rgba(95, 180, 230, 0.753),
+      0 0 100px rgba(95, 180, 230, 0.753);
+  }
+
+  .chartjs-render-monitor {
+    position: absolute;
+    top: 60%;
+  }
